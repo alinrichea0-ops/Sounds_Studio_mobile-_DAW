@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+}
+
+/* Digital LED font styling */
+.font-lcd {
+  font-family: 'JetBrains Mono', monospace;
+  font-feature-settings: "tnum" 1;
+}
+
+/* High-tech DAW metallic panel textures and glowing borders */
+.daw-panel-bg {
+  background: linear-gradient(180deg, #131c2e 0%, #0c1322 100%);
+  border-color: #1e2c45;
+}
+
+.daw-header-bg {
+  background: linear-gradient(180deg, #172338 0%, #0f1828 100%);
+  border-bottom: 1px solid #1f314d;
+}
+
+.daw-footer-bg {
+  background: linear-gradient(180deg, #142033 0%, #0a111e 100%);
+  border-top: 1px solid #1e304b;
+}
+
+.daw-track-header {
+  background: linear-gradient(90deg, #152238 0%, #101a2b 100%);
+}
+
+.daw-grid-pattern {
+  background-size: 80px 100%, 20px 100%;
+  background-image: 
+    linear-gradient(to right, rgba(30, 48, 77, 0.5) 1px, transparent 1px),
+    linear-gradient(to right, rgba(19, 32, 54, 0.3) 1px, transparent 1px);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 16px rgba(0, 242, 254, 0.45), inset 0 0 8px rgba(0, 242, 254, 0.2);
+}
+
+.glow-cyan-sm {
+  box-shadow: 0 0 8px rgba(0, 242, 254, 0.35);
+}
+
+.glow-red {
+  box-shadow: 0 0 14px rgba(239, 68, 68, 0.6);
+}
+
+/* Custom sleek DAW scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090e18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f314f;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00d2ff;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "SoundStudio Mobile DAW",
+  "description": "Professional mobile digital audio workstation with multi-track sequencer, synthesizer instruments, piano roll, mixer, parametric EQ, and comprehensive audio effects rack.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
